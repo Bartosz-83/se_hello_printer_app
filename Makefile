@@ -1,7 +1,7 @@
 .PHONY: test
 
 deps:
-		pip ins tall -r requirements.txt; \
+		pip install -r requirements.txt; \
 		pip install -r test_requirements.txt
 
 lint:

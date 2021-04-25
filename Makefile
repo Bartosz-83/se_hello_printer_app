@@ -10,6 +10,14 @@ lint:
 test:
 		PYTHONPATH=. py.test --verbose -s
 
+docker_build:
+		docker build -t hello-world-printer .
 
 run:
 		python3 main.py
+
+docker_run: docker_build
+		docker run \
+		--name hello-world-printer-dev \
+		-p 5000:5000 \
+		-d hello-world-printer

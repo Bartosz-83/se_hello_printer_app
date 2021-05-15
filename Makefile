@@ -16,6 +16,9 @@ docker_build:
 run:
 		python3 main.py
 
+test_smoke:
+		curl --fail 127.0.0.1:5000
+
 docker_run: docker_build
 		docker run \
 		--name hello-world-printer-dev \

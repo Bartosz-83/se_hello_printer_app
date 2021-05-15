@@ -8,3 +8,7 @@ script:
   - make lint
   - make docker_build
   - make docker_push
+deploy:
+  provider: heroku
+  app: young-spire-74713
+  api_key: ${HEROKU_API_KEY}

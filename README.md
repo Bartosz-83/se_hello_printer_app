@@ -92,6 +92,6 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
   # Status Cake i TravisCI
 
-  [![Build Status](https://travis-ci.org/Bartosz-83/se_hello_printer_app.svg?branch=master)
+  ![Build Status](https://travis-ci.org/Bartosz-83/se_hello_printer_app.svg?branch=master)
 
   ![StatusCake](https://app.statuscake.com/button/index.php?Track=5961409&Days=1&Design=1)

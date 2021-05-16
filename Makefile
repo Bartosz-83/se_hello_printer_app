@@ -13,10 +13,10 @@ test:
 run:
 				python main.py
 
-make test_cov:
+test_cov:
 		PYTHONPATH=. py.test --verbose -s --cov=.
 
-make test_xunit:
+test_xunit:
 		PYTHONPATH=. py.test --verbose -s --cov=. --cov-report xml
 
 docker_build:

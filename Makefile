@@ -13,6 +13,13 @@ test:
 run:
 				python main.py
 
+make test_cov:
+		PYTHONPATH=. py.test --verbose -s --cov=.
+
+make test_xunit:
+		PYTHONPATH=. py.test --verbose -s --cov=.
+		PYTHONPATH=. py.test --verbose -s --cov=. --cov-report xml
+
 docker_build:
 		docker build -t hello-world-printer .
 

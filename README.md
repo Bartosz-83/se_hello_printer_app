@@ -47,14 +47,20 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
   ...
 
-  # aktywacja 
+  # aktywacja
   $ source .venv/bin/activate
   ```
 
 - Integracja z TravisCI:
 
   ```
-  # miejsce na twoje notatki
+  # miejsce na twoje notatki   
+
+      $ docker stop hello-world-printer-dev
+
+      $ docker rm hello-world-printer-dev
+
+      $ make docker_run
   ```
 
 # Pomocnicze
